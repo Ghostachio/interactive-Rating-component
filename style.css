@@ -1,0 +1,121 @@
+/* ### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem, 1rem;
+    background-color: hsl(216, 12%, 8%);
+    min-height: 90vh;
+    
+}
+
+.main-container>p, h1{
+    color: hsla(0, 0%, 100%, 0.836);
+}
+
+.thankyou> p, h2{
+    color: hsl(0, 0%, 100%)
+}
+
+.main-container, .thankyou{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(213, 19%, 18%) ;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+    width: 500px;
+}
+
+.btn-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.btn{
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: 50px;
+    border-bottom: none;
+    border-style: none;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.submit-btn{
+    width: 500px;
+    padding: 0.5rem;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color:  hsl(0, 0%, 100%);
+    
+}
+
+.btn:hover{
+    background-color: hsl(25, 97%, 53%);
+    transition: 0.25s;
+}
+
+.btn:focus{
+    background-color: hsl(25, 97%, 53%);
+    transition: 0.25s;
+}
+
+.submit-btn{
+    background-color: hsl(25, 97%, 53%);
+    transition: 0.25s;
+}
+
+.submit-btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%) ;
+    transition: 0.25s;
+}
+
+.hidden{
+    display: none;
+}
+
+.seen{
+    display: flex;
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
